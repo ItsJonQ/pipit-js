@@ -195,6 +195,7 @@
     $el.addClass('pipit-player--on');
 
     this.set('_status', true);
+    event.trigger('pipit:activated');
 
     return this;
   };
@@ -214,6 +215,7 @@
     $el.removeClass('pipit-player--on');
 
     this.set('_status', false);
+    event.trigger('pipit:deactivated');
 
     return this;
   };
