@@ -93,8 +93,9 @@ body {
 }
 
 .pipit-player {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   position: relative;
+  z-index: 1000;
 }
 
 .pipit-wrapper {
@@ -104,9 +105,8 @@ body {
 .pipit-player--on {
   transform: translate(0, -10px);
   bottom: 0;
-  right: 10px;
   position: fixed;
-  z-index: 1000;
+  right: 10px;
 
   .pipit-player__media {
     width: 100%;
